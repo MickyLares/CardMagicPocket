@@ -10,7 +10,7 @@ fun HomeScreen(navController: NavController, cardsList: List<Cards>) {
     LazyColumn() {
         items(cardsList.size){
                 index->
-                CardItem(cardsList[index], onCardClick = {navController.navigate("Details/$index")})
+                CardItem(cardsList[index], onCardClick = {navController.navigate("Detail/$index")})
         }
     }
 

@@ -34,13 +34,13 @@ fun CardItem(cards: Cards, onCardClick: () -> Unit = {}) {
                 .fillMaxSize()
         ) {
             Image(
-                painter = rememberImagePainter(data = cards.image,
+                painter = rememberImagePainter(data = cards.imagen,
                     builder = {
                         scale(Scale.FILL)
                         placeholder(R.drawable.baseline_image_not_supported_24)
                         transformations(CircleCropTransformation())
                     }),
-                contentDescription = cards.name
+                contentDescription = cards.nombre
             )
             Column(
                 verticalArrangement = Arrangement.Center, modifier = Modifier
@@ -48,7 +48,7 @@ fun CardItem(cards: Cards, onCardClick: () -> Unit = {}) {
                     .padding(2.dp)
                     .weight(0.8f)
             ) {
-                Text(text = cards.name)
+                Text(text = cards.nombre)
             }
         }
 

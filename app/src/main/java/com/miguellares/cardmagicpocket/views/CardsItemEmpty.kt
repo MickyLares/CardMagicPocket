@@ -24,7 +24,7 @@ fun CardsItemEmpty() {
             .padding(8.dp, 4.dp)
             .fillMaxWidth()
             .height(110.dp)
-            .clickable {  },
+            .clickable { },
         shape = RoundedCornerShape(20.dp),
         elevation = 5.dp
     ) {
@@ -35,7 +35,7 @@ fun CardsItemEmpty() {
         ) {
             Image(
                 painter = rememberImagePainter(
-                    data = R.drawable.persona_femina_cortada ,
+                    data = "https://rickandmortyapi.com/api/character/avatar/2.jpeg",
                     builder = {
                         scale(Scale.FILL)
                         placeholder(R.drawable.baseline_image_not_supported_24)
